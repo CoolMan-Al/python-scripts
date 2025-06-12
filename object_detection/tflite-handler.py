@@ -45,7 +45,11 @@ def detect_objects(frame):
 # Program Entry Point
 if(__name__ == '__main__'):
     # Image read
-    img = cv2.imread("input.png")
+    try:
+        img = cv2.imread("input.png")
+    except:
+        print("Input image not found")
+        exit()
 
     # BGR > RGB
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
