@@ -32,7 +32,7 @@ if __name__ == '__main__':
 
             student_email = gen_initials(first_names)
             student_email += id_surname[1].lower() + gen_uuid()
-            student_email += '@poppleton.ac.uk'
+            student_email += '@email.com'
 
             output = open('output.txt', 'a')
             output.write(f"{id_surname[0]} {student_email} \n")
