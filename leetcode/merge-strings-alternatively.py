@@ -15,6 +15,9 @@ def mergeAlternately(word1: str, word2: str):
         result += word1[i]
         result += word2[i]
 
+    result += word1[count:]
+    result += word2[count:]
+
     print(result)
 
 if __name__ == "__main__":
