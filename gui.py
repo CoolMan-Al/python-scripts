@@ -58,7 +58,7 @@ if __name__ == "__main__":
     detail.place(x=0,y=0)
     
     # Content
-    title = Label(detail, text="Team Project", font=("Courier", 64, 'bold'), compound='left')
+    title = Label(detail, text="Graphic Test", font=("Courier", 64, 'bold'), compound='left')
     title.pack(side='top')
         
     date = Label(detail, text=str(datetime.now())[0:-16])
