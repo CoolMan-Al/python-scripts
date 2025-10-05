@@ -1,7 +1,5 @@
-from subprocess import run
 from tkinter import Tk, font, Frame
 from tkinter.ttk import Button, Label
-from PIL import Image, ImageTk
 from datetime import datetime
 
 
@@ -28,16 +26,13 @@ def confirmStop():
     # Execute
     stopWindow.mainloop()
 
-
 def stopService():
     quit()
-
 
 def update():
     date.configure(text="Date: " + str(datetime.now())[0:-16])
     time.configure(text="Time: " + str(datetime.now())[11:-7])
     window.after(1000, update)
-
 
 if __name__ == "__main__": 
     # Window
